@@ -283,7 +283,15 @@ public class SocialMediaApp {
 // Full SocialMediaApp.java content truncated for brevity. Include complete code in final document if needed.
 
 Screenshots
-You can add GUI screenshots here using Word or by pasting directly in the document.
+![image](https://github.com/user-attachments/assets/2c17ab43-a5f9-4937-bc6a-a77cfed464d0)
+![image](https://github.com/user-attachments/assets/dd87932c-2938-461f-9eed-0882610c3b5f)
+![image](https://github.com/user-attachments/assets/2f483091-690f-41e3-8ae7-6955a3cb5723)
+![image](https://github.com/user-attachments/assets/18d58029-40a1-4b8e-a8e0-c22a814f3e04)
+![image](https://github.com/user-attachments/assets/9441d848-fb20-452b-a293-6bbe7bb05639)
+![image](https://github.com/user-attachments/assets/f80514b6-8e29-46f8-a3cc-fc974a8803d6)
+
+
+
 Results
 The app successfully allows users to register, login, create posts, and comment on posts via a GUI.
 Conclusion
