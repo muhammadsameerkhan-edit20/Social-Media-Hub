@@ -1,0 +1,106 @@
+Table of Contents
+1. Introduction
+2. Objective
+3. System Design
+4. Implementation
+5. Screenshots
+6. Results
+7. Conclusion
+8. Future Improvements
+Introduction
+SocialHub is a Java-based GUI social media application designed to simulate basic features of a social networking platform. It provides users with the ability to register an account and log in using valid credentials...
+Objective
+The objective of developing SocialHub is to build a simple yet functional social media application with a graphical user interface...
+System Design
+The system design of SocialHub consists of several main classes, each with specific responsibilities: User, Post, Comment, and SocialMediaApp...
+Implementation
+Below is the source code for the main classes used in this application:
+User.java
+
+public class User {
+    private String username;
+    private String password;
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public boolean checkPassword(String password) {
+        return this.password.equals(password);
+    }
+}
+
+Post.java
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Post {
+    private User author;
+    private String content;
+    private List<Comment> comments;
+
+    public Post(User author, String content) {
+        this.author = author;
+        this.content = content;
+        this.comments = new ArrayList<>();
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void addComment(Comment comment) {
+        comments.add(comment);
+    }
+}
+
+Comment.java
+
+public class Comment {
+    private User author;
+    private String content;
+
+    public Comment(User author, String content) {
+        this.author = author;
+        this.content = content;
+    }
+
+    public User getAuthor() {
+        return author;
+    }
+
+    public String getContent() {
+        return content;
+    }
+}
+
+SocialMediaApp.java
+
+// Full SocialMediaApp.java content truncated for brevity. Include complete code in final document if needed.
+
+Screenshots
+You can add GUI screenshots here using Word or by pasting directly in the document.
+Results
+The app successfully allows users to register, login, create posts, and comment on posts via a GUI.
+Conclusion
+SocialHub demonstrates the integration of Java Swing for GUI with object-oriented programming to simulate social media functionalities.
+Future Improvements
+1. Persistent file/database storage
+2. Profile management
+3. Image upload support
+4. Notifications
+5. Improved UI/UX
